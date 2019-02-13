@@ -12,10 +12,10 @@ def run_guessing_game
     elsif guess == solution
       puts "You guessed the correct number!"
       input = gets.chomp 
-        if input == 'exit'
-          puts "Goodbye!"
-          break
-        end
+        # if input == 'exit'
+        #   puts "Goodbye!"
+        #   break
+        # end
       break
     else 
       puts "The computer guessed #{solution}."
