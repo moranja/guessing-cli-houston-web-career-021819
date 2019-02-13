@@ -2,6 +2,8 @@ def run_guessing_game
   solution = rand(1..6)
   guess = 0
   puts "Guess a number between 1 and 6."
+  guess_string = gets.chomp
+  guess = guess_string.to_i
   while 1 != 0
   solution = rand(1..6)
     guess_string = gets.chomp
@@ -12,7 +14,7 @@ def run_guessing_game
     elsif guess == solution
       puts "You guessed the correct number!"
       puts "Guess a number between 1 and 6."
-      input = gets.chomp 
+      guess_string = gets.chomp 
     else 
       puts "The computer guessed #{solution}."
     end
