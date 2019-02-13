@@ -11,8 +11,8 @@ def run_guessing_game
       break
     elsif guess == solution
       puts "You guessed the correct number!"
-      puts "Guess a number between 1 and 6."
       input = gets.chomp 
+      puts "Let's go again!"
     else 
       puts "The computer guessed #{solution}."
     end
